@@ -1,0 +1,136 @@
+.body {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  height: fit-content;
+  padding: 1px 5px;
+}
+.tooltip {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  height: fit-content;
+  width: 350px;
+  background-color: rgb(46, 46, 253);
+  right: 0;
+  bottom: 20px;
+  animation-name: example;
+  animation-duration: 1s;
+  border-radius: 10px;
+
+  @keyframes example {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  h2 {
+    margin: 0;
+    color: white;
+  }
+  p {
+    color: white;
+  }
+
+  @media only screen and (max-width: 400px) {
+    & {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    & {
+      width: fit-content;
+    }
+  }
+}
+
+.tip {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  transform: rotate(45deg);
+  z-index: 2;
+  left: 30px;
+  animation-name: example;
+  animation-duration: 5s;
+  z-index: -1;
+  background-color: rgb(46, 46, 253);
+}
+.withinTooltip {
+  position: relative;
+  margin: 0;
+  padding: 30px;
+}
+.tooltipFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: white;
+  margin-top: 10px;
+  align-items: center;
+  button {
+    padding: 5px 20px;
+    border-radius: 5px;
+  }
+  @media only screen and (max-width: 270px) {
+    & {
+      flex-direction: column;
+      align-items: stretch;
+      button {
+        margin-top: 20px;
+        align-self: center;
+      }
+    }
+  }
+}
+.form {
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  margin-left: -11px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  input {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  label {
+    color: white;
+    &::before {
+      content: " ";
+    }
+  }
+}
+.next {
+  width: fit-content;
+  margin: 0;
+  padding: 2.5px 5px;
+  .anchor {
+    margin: 0;
+    font-weight: 100;
+    color: rgb(46, 46, 253);
+  }
+}
+.Image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+.scroll {
+  overflow-y: scroll;
+  height: fit-content;
+  max-height: 100px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

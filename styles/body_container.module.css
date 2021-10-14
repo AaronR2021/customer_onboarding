@@ -1,0 +1,201 @@
+.body {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1px 5px;
+}
+
+.tooltip {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 350px;
+  background-color: #2e2efd;
+  right: 0;
+  bottom: 20px;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tooltip h2 {
+  margin: 0;
+  color: white;
+}
+
+.tooltip p {
+  color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  .tooltip {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tooltip {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.tip {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 2;
+  left: 30px;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  z-index: -1;
+  background-color: #2e2efd;
+}
+
+.withinTooltip {
+  position: relative;
+  margin: 0;
+  padding: 30px;
+}
+
+.tooltipFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tooltipFooter button {
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 270px) {
+  .tooltipFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .tooltipFooter button {
+    margin-top: 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.form {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  margin-left: -11px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form input {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.form label {
+  color: white;
+}
+
+.form label::before {
+  content: " ";
+}
+
+.next {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 2.5px 5px;
+}
+
+.next .anchor {
+  margin: 0;
+  font-weight: 100;
+  color: #2e2efd;
+}
+
+.Image {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 100px;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=body_container.module.css.map */

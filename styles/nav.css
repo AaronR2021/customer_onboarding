@@ -1,0 +1,38 @@
+ul {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(102, 51, 153, 0.103);
+}
+
+ul li {
+  margin-right: 30px;
+}
+
+ul a {
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 570px) {
+  ul a {
+    padding: 10px 0;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  ul li {
+    margin: 10px;
+  }
+  ul a {
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
